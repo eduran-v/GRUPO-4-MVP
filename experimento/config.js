@@ -7,7 +7,7 @@ window.EXP_CONFIG = {
   // 1) Pega aquí la URL de tu Web App de Google Apps Script
   //    (termina en /exec). Si la dejas vacía, la página funciona
   //    en "modo demostración" y NO envía datos.
-  SCRIPT_URL: "",
+  SCRIPT_URL: "https://script.google.com/macros/s/AKfycbwbFP_P6Zv9oyyxl90j1wSDLCMdZa7tvWAnjcW4gR7vwnkI97OE-0laysxylN38XRTL-w/exec",
 
   // 2) Muestra del experimento: genera los códigos E01 … E15
   TOTAL_PARTICIPANTES: 15,
