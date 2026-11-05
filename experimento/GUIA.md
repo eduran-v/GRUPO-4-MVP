@@ -22,6 +22,7 @@ La app original (`index.html`) no cambia.
    - *Ejecutar como:* **Yo**
    - *Quién tiene acceso:* **Cualquier persona**
 7. Pulsa **Implementar** y autoriza los permisos. Google mostrará "app no verificada": entra en *Configuración avanzada › Ir a (no seguro)*. Es tu propio script.
+   En la pantalla **"Selecciona a qué puede acceder"**, marca **Seleccionar todo**, con las dos casillas (Google Drive y Google Sheets), y pulsa **Continuar** al final de la página. Sheets sirve para guardar los eventos y Drive para guardar los CV que los estudiantes acepten compartir. Si dejas alguna sin marcar, el script fallará.
 8. Copia la **URL de la aplicación web**, que termina en `/exec`.
 9. Abre `experimento/config.js` y pégala en `SCRIPT_URL: "https://script.google.com/macros/s/.../exec"`.
 10. Sube el cambio a GitHub.
