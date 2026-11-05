@@ -27,7 +27,11 @@ La app original (`index.html`) no cambia.
 9. Abre `experimento/config.js` y pégala en `SCRIPT_URL: "https://script.google.com/macros/s/.../exec"`.
 10. Sube el cambio a GitHub.
 
-**Para comprobarlo:** abre la URL `/exec` en el navegador. Debe decir *"El receptor del experimento está funcionando ✅"*.
+**Para comprobarlo:**
+- En el editor de Apps Script, elige la función **`probar`** en el menú de arriba y pulsa **▶ Ejecutar**. En el *Registro de ejecución* aparecerá el enlace a tu hoja de resultados.
+- Abre la URL `/exec` en el navegador. Debe decir *"El receptor del experimento está funcionando ✅"*.
+
+> **¿Dónde está la hoja?** Si creaste el script desde una hoja (*Extensiones › Apps Script*), los datos llegan a esa misma hoja. Si lo creaste desde script.google.com, el script crea solo una hoja llamada **"Experimento Grupo 4 - Resultados"** en tu Google Drive. Puedes buscarla ahí o usar el enlace que muestra `probar`.
 
 > Si después editas `Code.gs`, entra en **Implementar › Administrar implementaciones › ✏️ › Versión: Nueva**. Si no lo haces, se sigue ejecutando la versión anterior.
 

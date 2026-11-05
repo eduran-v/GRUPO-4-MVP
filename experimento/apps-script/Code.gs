@@ -59,9 +59,32 @@ function doGet(e) {
   return json_({ ok: true, eventos: eventos });
 }
 
+/* Ejecútala desde el editor (botón ▶ Ejecutar) para probar:
+   escribe una fila de prueba y muestra el enlace a tu hoja en el registro. */
+function probar() {
+  const hoja = obtenerHoja_();
+  hoja.appendRow(["prueba-" + Date.now(), new Date(), "", "PRUEBA", "prueba_desde_editor"]);
+  Logger.log("✅ Todo bien. Tu hoja de resultados está aquí: " + hoja.getParent().getUrl());
+}
+
 /* ---------- Utilidades ---------- */
+// Usa la hoja donde está el script; si el script se creó por separado
+// (desde script.google.com), crea una hoja nueva en tu Drive y la recuerda.
+function obtenerLibro_() {
+  const activo = SpreadsheetApp.getActiveSpreadsheet();
+  if (activo) return activo;
+  const props = PropertiesService.getScriptProperties();
+  const id = props.getProperty("SHEET_ID");
+  if (id) {
+    try { return SpreadsheetApp.openById(id); } catch (_) { /* fue borrada: se crea otra */ }
+  }
+  const ss = SpreadsheetApp.create("Experimento Grupo 4 - Resultados");
+  props.setProperty("SHEET_ID", ss.getId());
+  return ss;
+}
+
 function obtenerHoja_() {
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ss = obtenerLibro_();
   let hoja = ss.getSheetByName(HOJA);
   if (!hoja) {
     hoja = ss.insertSheet(HOJA);
