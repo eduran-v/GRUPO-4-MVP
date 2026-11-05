@@ -1,0 +1,88 @@
+/* ==========================================================
+   Experimento Grupo 4 — 3 vacantes curadas en Quito
+   EMPRESAS FICTICIAS creadas para el experimento académico.
+   Puedes editar textos, áreas o estipendios libremente.
+   ========================================================== */
+window.VACANTES_QUITO = [
+  {
+    id: "v1",
+    empresa: "Lumbre Café Lab",
+    iniciales: "LC",
+    color: ["#FF8A3D", "#FF5D6C"],
+    sector: "Gastronomía · Café de especialidad",
+    titulo: "Pasante de Marketing Digital y Redes Sociales",
+    ubicacion: "La Floresta, Quito",
+    modalidad: "Híbrido",
+    horario: "Medio tiempo · 20 h/semana (horario flexible con tus clases)",
+    duracion: "4 meses",
+    estipendio: "USD 300/mes",
+    descripcion: "Somos una cafetería de especialidad con dos locales en Quito y queremos crecer en redes. Buscamos un/a pasante que nos ayude a crear contenido, medir resultados y conectar con más clientes jóvenes.",
+    responsabilidades: [
+      "Crear y programar publicaciones para Instagram y TikTok",
+      "Diseñar piezas gráficas sencillas en Canva",
+      "Redactar textos (copywriting) para promociones y eventos",
+      "Revisar métricas de redes sociales y proponer mejoras cada mes",
+    ],
+    requisitos: [
+      "Estudiante de Marketing, Comunicación, Diseño, Administración o carreras afines",
+      "No se requiere experiencia laboral previa",
+      "Creatividad, buena ortografía y comunicación",
+    ],
+    habilidades: ["Redes sociales", "Canva", "Copywriting", "Marketing", "Comunicación", "Trabajo en equipo"],
+    beneficios: ["Certificado de pasantía", "Café gratis en tu turno 😉", "Mentoría con el equipo fundador"],
+  },
+  {
+    id: "v2",
+    empresa: "Cooperativa Ñan Ahorro",
+    iniciales: "ÑA",
+    color: ["#2DD4A7", "#2563FF"],
+    sector: "Finanzas · Cooperativa de ahorro y crédito",
+    titulo: "Practicante de Análisis de Datos y Finanzas",
+    ubicacion: "Av. Amazonas y Naciones Unidas, Quito",
+    modalidad: "Presencial",
+    horario: "Medio tiempo · 20 h/semana (mañanas o tardes)",
+    duracion: "6 meses",
+    estipendio: "USD 350/mes",
+    descripcion: "Somos una cooperativa con más de 20 000 socios en Pichincha. Buscamos un/a practicante que apoye al área de riesgos y finanzas organizando datos y preparando reportes para la toma de decisiones.",
+    responsabilidades: [
+      "Organizar y limpiar bases de datos de socios y créditos en Excel",
+      "Construir reportes y tableros en Power BI",
+      "Apoyar en el análisis de indicadores financieros mensuales",
+      "Documentar procesos y presentar resultados al equipo",
+    ],
+    requisitos: [
+      "Estudiante de Economía, Finanzas, Contabilidad, Ingeniería o carreras afines",
+      "No se requiere experiencia laboral previa",
+      "Excel intermedio (tablas dinámicas, fórmulas)",
+    ],
+    habilidades: ["Excel", "Power BI", "Estadística", "Finanzas", "Análisis de datos", "Resolución de problemas"],
+    beneficios: ["Certificado de prácticas preprofesionales", "Capacitación en Power BI", "Posibilidad de contratación"],
+  },
+  {
+    id: "v3",
+    empresa: "Kinti Labs",
+    iniciales: "KL",
+    color: ["#7C5CFF", "#2563FF"],
+    sector: "Tecnología · Startup de software educativo",
+    titulo: "Pasante de Soporte y Desarrollo Web",
+    ubicacion: "Cumbayá, Quito",
+    modalidad: "Híbrido",
+    horario: "Medio tiempo · 20 h/semana",
+    duracion: "6 meses",
+    estipendio: "USD 320/mes",
+    descripcion: "Somos una startup quiteña que crea plataformas de aprendizaje para colegios. Buscamos un/a pasante curioso/a que apoye a nuestros usuarios y aprenda a mejorar nuestra web junto al equipo de desarrollo.",
+    responsabilidades: [
+      "Responder consultas de usuarios (atención al cliente) por chat y correo",
+      "Hacer pequeños cambios en páginas web con HTML, CSS y JavaScript",
+      "Probar nuevas funciones (testing) y reportar errores",
+      "Escribir documentación y guías de uso",
+    ],
+    requisitos: [
+      "Estudiante de Sistemas, Software, Computación, Telecomunicaciones o afines",
+      "No se requiere experiencia laboral previa",
+      "Ganas de aprender y buena comunicación escrita",
+    ],
+    habilidades: ["HTML", "CSS", "JavaScript", "Git", "Atención al cliente", "Documentación"],
+    beneficios: ["Certificado de pasantía", "Mentoría semanal con un desarrollador", "Horario flexible en exámenes"],
+  },
+];
